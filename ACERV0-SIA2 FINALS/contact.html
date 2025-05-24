@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PLASHDRIVE</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-text">PLASH<span class="logo-drive">DRIVE</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="products.html">Products</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+    </li>
+    <li class="nav-item" id="loginNavItem">
+        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+    </li>
+    <li class="nav-item" id="signupNavItem">
+        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+    </li>
+    <li class="nav-item d-none" id="welcomeNavItem">
+        <span class="nav-link">Welcome, <span id="usernameDisplay"></span></span>
+    </li>
+    <li class="nav-item d-none" id="logoutNavItem">
+        <a class="nav-link" href="#" id="logoutLink">Logout</a>
+    </li>
+</ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="contact-info">
+                        <div class="section-title mb-4">
+                            <h2>Get In Touch</h2>
+                            <div class="separator"></div>
+                        </div>
+                        <p>Have questions about our products or services? Feel free to contact us using the form or the information below.</p>
+                        
+                        <div class="contact-details mt-4">
+                            <div class="contact-item d-flex mb-3">
+                                <div class="icon me-3">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="text">
+                                    <h5>Owner</h5>
+                                    <p>Romnick Acervo</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item d-flex mb-3">
+                                <div class="icon me-3">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="text">
+                                    <h5>Company</h5>
+                                    <p>PLASHDRIVE</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item d-flex mb-3">
+                                <div class="icon me-3">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="text">
+                                    <h5>Email</h5>
+                                    <p>info@plashdrive.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item d-flex mb-3">
+                                <div class="icon me-3">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="text">
+                                    <h5>Phone</h5>
+                                    <p>+63 991 257 2026</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item d-flex mb-3">
+                                <div class="icon me-3">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="text">
+                                    <h5>Main Branch</h5>
+                                    <p>123 Novaliches Bayan, Quezon City, Philippines</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item d-flex mb-3">
+                                <div class="icon me-3">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="text">
+                                    <h5>Other Branches</h5>
+                                    <p>SM Megamall, Mandaluyong City</p>
+                                    <p>Ayala Mall, Cebu City</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links mt-4">
+                            <h5>Connect With Us</h5>
+                            <div class="social-icons">
+                                <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7">
+                    <div class="contact-form-wrap">
+                        <div class="section-title mb-4">
+                            <h2>Send Us A Message</h2>
+                            <div class="separator"></div>
+                        </div>
+                        <form id="contactForm" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name *" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email *" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="tel" class="form-control" id="phone" placeholder="Your Phone">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject *" required>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your Message *" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container-fluid p-0">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123744.5732592283!2d120.97174529725832!3d14.65846386401268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b75258884ce1%3A0x2b3ecd40a74e4961!2sQuezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1668457354656!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>PLASHDRIVE</h5>
+                    <p>Filipino crafted flash drives that combine functionality with cultural identity.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Quezon City, Philippines</p>
+                    <p><i class="fas fa-phone"></i> +63 XXX XXX XXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@plashdrive.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 PLASHDRIVE. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+          <div class="mt-3 text-center text-danger d-none" id="loginError">Invalid credentials</div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <p class="mb-0">Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">Sign Up</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="signupForm">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="newUsername" class="form-label">Username</label>
+            <input type="text" class="form-control" id="newUsername" required>
+          </div>
+          <div class="mb-3">
+            <label for="newPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="newPassword" required>
+          </div>
+          <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+          <div class="mt-3 text-center text-danger d-none" id="signupError">Passwords do not match</div>
+          <div class="mt-3 text-center text-success d-none" id="signupSuccess">Account created successfully!</div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <p class="mb-0">Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">Login</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
